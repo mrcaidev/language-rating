@@ -1,0 +1,29 @@
+{
+  "name": "language-rating",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^3.0.1",
+    "astro": "^2.0.10",
+    "html-to-image": "^1.11.11",
+    "tailwindcss": "^3.2.6"
+  },
+  "devDependencies": {
+    "@types/node": "^18.13.0",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-astro": "^0.23.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "prettier": "^2.8.4",
+    "prettier-plugin-astro": "^0.8.0",
+    "typescript": "^4.9.5"
+  }
+}

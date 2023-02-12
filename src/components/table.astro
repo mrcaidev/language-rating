@@ -1,0 +1,16 @@
+---
+import Cell from "components/cell.astro";
+import questions from "data/questions.json";
+---
+
+<ul
+  class="grid grid-cols-1 min-[320px]:grid-cols-2 sm:grid-cols-3 border border-gray-800"
+>
+  {
+    questions.map((question) => (
+      <li class="border border-gray-800">
+        <Cell name={question} />
+      </li>
+    ))
+  }
+</ul>

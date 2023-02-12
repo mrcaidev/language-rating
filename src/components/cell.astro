@@ -1,0 +1,17 @@
+---
+export type Props = {
+  name: string;
+};
+const { name } = Astro.props;
+---
+
+<label class="flex flex-col items-center gap-1 py-1 aspect-video">
+  <input
+    type="text"
+    class="grow min-w-0 w-full focus:outline-none bg-transparent font-bold text-lg sm:text-xl text-center"
+  />
+  <hr class="w-full border-gray-400" />
+  <span class="text-sm sm:text-base">
+    {name}
+  </span>
+</label>

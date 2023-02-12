@@ -1,0 +1,33 @@
+---
+import Download from "icons/download.astro";
+---
+
+<button
+  type="button"
+  id="save-image"
+  class="flex justify-center items-center gap-2 min-w-[50%] px-4 py-3 rounded mx-auto bg-gray-900 hover:bg-gray-800 active:bg-gray-700 font-bold text-gray-100"
+>
+  生成图片
+  <Download size={20} />
+</button>
+
+<script>
+  import { toPng } from "html-to-image";
+
+  const button = document.querySelector("#save-image") as HTMLButtonElement;
+  const container = document.querySelector("#image-area") as HTMLDivElement;
+
+  button.addEventListener("click", async () => {
+    try {
+      const image = await toPng(container, { backgroundColor: "#f3f4f6" });
+      const now = new Date().toISOString();
+
+      const link = document.createElement("a");
+      link.download = `编程语言喜好表-${now}.png`;
+      link.href = image;
+      link.click();
+    } catch (error) {
+      console.error(error);
+    }
+  });
+</script>

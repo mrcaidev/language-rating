@@ -1,0 +1,22 @@
+---
+import SaveImage from "components/save-image.astro";
+import Table from "components/table.astro";
+import Link from "icons/link.astro";
+import Layout from "./_layout.astro";
+---
+
+<Layout>
+  <main>
+    <div id="image-area" class="p-6">
+      <h1 class="font-bold text-2xl sm:text-3xl text-center">编程语言喜好表</h1>
+      <div
+        class="flex justify-center items-center gap-1.5 mt-3 mb-6 text-xs text-gray-600"
+      >
+        <Link size={11} />
+        language-rating.mrcai.dev
+      </div>
+      <Table />
+    </div>
+    <SaveImage />
+  </main>
+</Layout>

@@ -1,0 +1,19 @@
+---
+import Footer from "components/footer.astro";
+import GithubCorner from "components/github-corner.astro";
+import Head from "components/head.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <Head />
+  <body class="bg-gray-100 text-gray-900">
+    <div
+      class="flex flex-col justify-center gap-6 max-w-3xl min-h-screen py-8 mx-auto"
+    >
+      <slot />
+      <Footer />
+    </div>
+    <GithubCorner />
+  </body>
+</html>

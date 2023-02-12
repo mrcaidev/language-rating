@@ -1,0 +1,14 @@
+---
+const title = "编程语言喜好表";
+const description = "来选出你心目中最喜欢/最想学/最讨厌/...的编程语言吧！";
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+---
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <link rel="icon" href="/favicon.svg" />
+  <link rel="canonical" href={canonicalUrl} />
+  <meta name="description" content={description} />
+</head>
